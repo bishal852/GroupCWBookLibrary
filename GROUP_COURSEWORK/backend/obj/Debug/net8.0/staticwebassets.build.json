@@ -1,0 +1,20 @@
+{
+  "Version": 1,
+  "Hash": "NlXJxY43IqeN8ZBFmTwTaazDbY4HZh/g3GM6vjf9i74=",
+  "Source": "backend",
+  "BasePath": "_content/backend",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "backend\\wwwroot",
+      "Source": "backend",
+      "ContentRoot": "C:\\Users\\sharb\\OneDrive\\Desktop\\GROUP_COURSEWORK\\GROUP_COURSEWORK\\backend\\wwwroot\\",
+      "BasePath": "_content/backend",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [],
+  "Endpoints": []
+}

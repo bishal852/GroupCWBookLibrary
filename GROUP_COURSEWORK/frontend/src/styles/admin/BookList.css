@@ -1,0 +1,353 @@
+/* Book List Container */
+.book-list-container {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+/* Table Wrapper */
+.book-table-wrapper {
+  overflow-x: auto;
+  margin-bottom: 24px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Table Styles */
+.book-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 0.95rem;
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.book-table th {
+  background-color: #f0f4f8;
+  color: #334155;
+  font-weight: 600;
+  text-align: left;
+  padding: 16px;
+  border-bottom: 2px solid #e2e8f0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.book-table td {
+  padding: 16px;
+  border-bottom: 1px solid #e2e8f0;
+  vertical-align: middle;
+}
+
+.book-table tr:last-child td {
+  border-bottom: none;
+}
+
+.book-table tr:hover {
+  background-color: #f8fafc;
+}
+
+/* Book ID */
+.book-id {
+  font-weight: 600;
+  color: #64748b;
+  text-align: center;
+  width: 60px;
+}
+
+/* Book Title */
+.book-title {
+  font-weight: 600;
+  color: #1e293b;
+  max-width: 250px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Book Author */
+.book-author {
+  color: #475569;
+}
+
+/* Book ISBN */
+.book-isbn {
+  font-family: monospace;
+  color: #64748b;
+  font-size: 0.85rem;
+}
+
+/* Price Styles */
+.book-price {
+  font-weight: 600;
+}
+
+.original-price {
+  display: block;
+  text-decoration: line-through;
+  color: #94a3b8;
+  font-size: 0.85rem;
+  font-weight: normal;
+}
+
+.discount-price {
+  color: #ef4444;
+  font-weight: 700;
+}
+
+/* Stock Styles */
+.book-stock {
+  position: relative;
+}
+
+.stock-number {
+  font-weight: 600;
+  color: #334155;
+}
+
+.stock-label {
+  display: inline-block;
+  margin-left: 8px;
+  font-size: 0.7rem;
+  padding: 2px 6px;
+  border-radius: 4px;
+  white-space: nowrap;
+  font-weight: 600;
+}
+
+.stock-warning .stock-label {
+  background-color: #fef2f2;
+  color: #ef4444;
+}
+
+.out-of-stock {
+  background-color: #fff1f2;
+}
+
+.book-stock:not(.stock-warning) .stock-label {
+  background-color: #f0fdf4;
+  color: #16a34a;
+}
+
+/* Discount Styles */
+.book-discount {
+  min-width: 120px;
+}
+
+.discount-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.discount-badge {
+  display: inline-block;
+  background-color: #16a34a;
+  color: white;
+  font-size: 0.75rem;
+  padding: 3px 8px;
+  border-radius: 4px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.discount-dates {
+  font-size: 0.75rem;
+  color: #64748b;
+}
+
+.discount-expired {
+  display: inline-block;
+  background-color: #94a3b8;
+  color: white;
+  font-size: 0.75rem;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.discount-scheduled {
+  display: inline-block;
+  background-color: #0ea5e9;
+  color: white;
+  font-size: 0.75rem;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.no-discount {
+  color: #94a3b8;
+  font-size: 0.85rem;
+}
+
+/* Action Buttons */
+.book-actions {
+  min-width: 280px;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-start;
+}
+
+.btn-action {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  min-width: 60px;
+}
+
+.btn-edit {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.btn-edit:hover {
+  background-color: #2563eb;
+}
+
+.btn-stock {
+  background-color: #64748b;
+  color: white;
+}
+
+.btn-stock:hover {
+  background-color: #475569;
+}
+
+.btn-discount {
+  background-color: #16a34a;
+  color: white;
+}
+
+.btn-discount:hover {
+  background-color: #15803d;
+}
+
+.btn-delete {
+  background-color: #ef4444;
+  color: white;
+}
+
+.btn-delete:hover {
+  background-color: #dc2626;
+}
+
+.btn-action:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-top: 24px;
+}
+
+.pagination-button {
+  padding: 8px 12px;
+  border: 1px solid #e2e8f0;
+  background-color: #fff;
+  color: #3b82f6;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: all 0.2s;
+}
+
+.pagination-button:hover {
+  background-color: #f1f5f9;
+}
+
+.pagination-button.active {
+  background-color: #3b82f6;
+  color: white;
+  border-color: #3b82f6;
+}
+
+.pagination-button:disabled {
+  color: #94a3b8;
+  cursor: not-allowed;
+  background-color: #f1f5f9;
+}
+
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  padding: 24px;
+  position: relative;
+  width: 90%;
+  max-width: 600px;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.modal-content.modal-sm {
+  max-width: 400px;
+}
+
+.modal-content.modal-md {
+  max-width: 500px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #64748b;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.modal-close:hover {
+  background-color: #f1f5f9;
+  color: #334155;
+}
+
+/* Alert Styles */
+.alert {
+  padding: 16px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.alert-danger {
+  background-color: #fef2f2;
+  color: #b91c1c;
+  border: 1px solid #fee2e2;
+}

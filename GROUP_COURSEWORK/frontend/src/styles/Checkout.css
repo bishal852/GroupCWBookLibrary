@@ -1,0 +1,24 @@
+/* Discount styling */
+.discount {
+    color: #28a745;
+    font-weight: bold;
+  }
+  
+  .discount-value {
+    color: #28a745;
+  }
+  
+  .discount-detail {
+    color: #28a745;
+    font-size: 0.9em;
+    padding-left: 1rem;
+  }
+  
+  .summary-row.total {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top: 1rem;
+    border-top: 1px solid #ddd;
+    padding-top: 0.5rem;
+  }
+  

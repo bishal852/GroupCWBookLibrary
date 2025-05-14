@@ -1,0 +1,148 @@
+.checkout-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .checkout-title {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .checkout-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .checkout-form-container {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .form-section-title {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .checkout-form .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .checkout-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+  }
+  
+  .checkout-form .form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .checkout-form .form-control:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  .checkout-form .invalid-feedback {
+    color: #dc3545;
+    margin-top: 5px;
+    font-size: 0.875rem;
+  }
+  
+  .checkout-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+  
+  .order-summary {
+    flex: 1;
+    min-width: 300px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 4px;
+  }
+  
+  .summary-title {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .summary-items {
+    margin-bottom: 20px;
+  }
+  
+  .summary-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .item-info {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .item-quantity {
+    color: #666;
+  }
+  
+  .summary-totals {
+    margin-top: 20px;
+  }
+  
+  .summary-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+  }
+  
+  .summary-row.total {
+    font-weight: bold;
+    font-size: 1.2rem;
+    border-top: 1px solid #ddd;
+    margin-top: 10px;
+    padding-top: 15px;
+  }
+  
+  .summary-row.discount {
+    color: #28a745;
+    font-weight: 500;
+  }
+  
+  .summary-row.discount-detail {
+    color: #28a745;
+    font-size: 0.9rem;
+    padding-left: 20px;
+  }
+  
+  .discount-value {
+    color: #28a745;
+    font-weight: 500;
+  }
+  
+  .empty-checkout {
+    text-align: center;
+    padding: 40px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+  }
+  
+  @media (max-width: 768px) {
+    .checkout-content {
+      flex-direction: column;
+    }
+  
+    .order-summary {
+      order: -1;
+      margin-bottom: 20px;
+    }
+  }
+  

@@ -1,0 +1,199 @@
+/* Banner List Container */
+.banner-container {
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    padding: 20px;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+}
+
+/* Banner Header */
+.banner-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eaeaea;
+    width: 100%;
+}
+
+.banner-title {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+}
+
+.banner-refresh-btn {
+    background-color: #f1f3f5;
+    color: #495057;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.banner-refresh-btn:hover {
+    background-color: #e9ecef;
+}
+
+/* Empty State */
+.banner-empty {
+    text-align: center;
+    padding: 30px;
+    color: #6c757d;
+    background-color: #f8f9fa;
+    border-radius: 6px;
+    font-size: 15px;
+    width: 100%;
+}
+
+/* Table Styles */
+.banner-table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.banner-table {
+    width: 100%;
+    table-layout: fixed;
+    /* This helps with controlling column widths */
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.banner-table-head {
+    background-color: #f8f9fa;
+}
+
+.banner-th {
+    padding: 12px 15px;
+    text-align: left;
+    font-weight: 600;
+    color: #495057;
+    border-bottom: 2px solid #dee2e6;
+}
+
+/* Column widths */
+.banner-table .banner-th:nth-child(1) {
+    width: 40%;
+    /* Message column */
+}
+
+.banner-table .banner-th:nth-child(2),
+.banner-table .banner-th:nth-child(3) {
+    width: 15%;
+    /* Date columns */
+}
+
+.banner-table .banner-th:nth-child(4) {
+    width: 15%;
+    /* Status column */
+}
+
+.banner-table .banner-th:nth-child(5) {
+    width: 15%;
+    /* Actions column */
+}
+
+.banner-row {
+    border-bottom: 1px solid #e9ecef;
+}
+
+.banner-row:hover {
+    background-color: #f8f9fa;
+}
+
+.banner-cell {
+    padding: 12px 15px;
+    vertical-align: middle;
+    word-break: break-word;
+    /* Ensures text wraps instead of overflowing */
+}
+
+/* Banner Message Preview */
+.banner-message-cell {
+    max-width: none;
+    /* Remove max-width constraint */
+}
+
+.banner-preview {
+    padding: 10px;
+    border-radius: 4px;
+    word-break: break-word;
+    max-height: 80px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Status Indicators */
+.banner-status {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 500;
+    text-align: center;
+    min-width: 80px;
+}
+
+.banner-status-active {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.banner-status-scheduled {
+    background-color: #cce5ff;
+    color: #004085;
+}
+
+.banner-status-expired {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+/* Action Buttons */
+.banner-actions-cell {
+    width: auto;
+    /* Let it take natural width */
+}
+
+.banner-buttons {
+    display: flex;
+    gap: 8px;
+    justify-content: flex-start;
+}
+
+.banner-btn {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+    white-space: nowrap;
+}
+
+.banner-btn-edit {
+    background-color: #4a90e2;
+    color: white;
+}
+
+.banner-btn-edit:hover {
+    background-color: #3a7bc8;
+}
+
+.banner-btn-delete {
+    background-color: #dc3545;
+    color: white;
+}
+
+.banner-btn-delete:hover {
+    background-color: #c82333;
+}

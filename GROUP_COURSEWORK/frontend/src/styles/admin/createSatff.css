@@ -1,0 +1,139 @@
+/* Admin Section Styles */
+.admin-section {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    padding: 0.5px;
+    margin-bottom: 30px;
+}
+
+.admin-section h3 {
+    color: #2c3e50;
+    font-size: 20px;
+    font-weight: 600;
+
+    border-bottom: 1px solid #eaeaea;
+}
+
+/* Form Styles */
+.form-container {
+    max-width: 450px;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #4a5568;
+    font-size: 14px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    background-color: #f8fafc;
+}
+
+.form-control:focus {
+    border-color: #4299e1;
+    box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.15);
+    outline: none;
+    background-color: #fff;
+}
+
+/* Button Styles */
+.btn {
+    display: inline-block;
+    font-weight: 500;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 12px 20px;
+    font-size: 15px;
+    line-height: 1.5;
+    border-radius: 6px;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #3182ce;
+    border-color: #3182ce;
+}
+
+.btn-primary:hover {
+    background-color: #2b6cb0;
+    border-color: #2b6cb0;
+}
+
+.btn-primary:focus {
+    box-shadow: 0 0 0 3px rgba(49, 130, 206, 0.3);
+}
+
+.btn-primary:disabled {
+    background-color: #90cdf4;
+    border-color: #90cdf4;
+    cursor: not-allowed;
+}
+
+/* Alert Styles */
+.alert {
+    padding: 14px 16px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.alert-danger {
+    color: #c53030;
+    background-color: #fed7d7;
+    border: 1px solid #feb2b2;
+}
+
+.alert-success {
+    color: #2f855a;
+    background-color: #c6f6d5;
+    border: 1px solid #9ae6b4;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .admin-section {
+        padding: 20px 15px;
+    }
+
+    .btn {
+        width: 100%;
+    }
+}
+
+/* Optional: Password field with toggle visibility button */
+.password-field {
+    position: relative;
+}
+
+.password-toggle {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #718096;
+    cursor: pointer;
+}
+
+.password-toggle:hover {
+    color: #4a5568;
+}
